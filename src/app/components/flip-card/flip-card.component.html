@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-sm-2" style="margin-top: 10px;"
+  *ngFor="let usuario of usuarios"
+  >
+    <div class="card" appFlipcard>
+      <img class="card-img-top img-thumbnail" [src]="usuario.foto" alt="Title">
+      <div class="card-body">
+        <h4 class="card-title">{{usuario.nome}}</h4>
+        <p class="card-text">Idade {{usuario.idade}}</p>
+      </div>
+    </div>
+  </div>
+</div>
