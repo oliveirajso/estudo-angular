@@ -9,22 +9,28 @@ import { FlipCardModule } from './flip-card/flip-card.module';
 import { FundoAmareloDirective } from '../shared/fundo-amarelo.directive';
 import { HighlightMouseDirective } from '../shared/highlight-mouse.directive';
 import { HighlightDirective } from '../shared/highlight.directive';
+import { DiretivaNgElseComponent } from './diretiva-ng-else/diretiva-ng-else.component';
+import { NgElseDirective } from '../shared/ng-else.directive';
 
 @NgModule({
   declarations: [
     DiretivasCustomizadasComponent,
+    DiretivaNgElseComponent,
     FundoAmareloDirective,
     HighlightMouseDirective,
     HighlightDirective,
+    NgElseDirective,
   ],
   imports: [CommonModule, SlideModule, CarregarMaisModule, FlipCardModule],
   exports: [
     SlideComponent,
     FlipCardComponent,
     DiretivasCustomizadasComponent,
+    DiretivaNgElseComponent,
     FundoAmareloDirective,
     HighlightMouseDirective,
     HighlightDirective,
+    NgElseDirective,
   ],
 })
 export class SharedComponentsModule {}

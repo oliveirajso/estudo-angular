@@ -1,0 +1,16 @@
+<p>diretiva Ng else!</p>
+<ng-template [ngIf]="mostraCursos">
+ <div>
+   Lista de Cursos aqui.
+ </div>
+</ng-template>
+
+<div *ngElse="mostraCursos">
+  Não existe cursos para serem listados.
+</div>
+<br/>
+<button (click)="onMostrarCursos()">Mostrar/Ocultar</button>
+
+<ng-template [ngElse]="mostraCursos">
+  <div>Conteudo</div>
+</ng-template>
