@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { SharedComponentsModule } from './componentes/shared-components.module';
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 
-
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, SharedComponentsModule],

@@ -1,3 +1,7 @@
+import { CursosComponent } from "./../cursos/cursos/cursos.component";
+import { CursoDetalheComponent } from "./../cursos/curso-detalhe/curso-detalhe.component";
+import { CursosModule } from './../cursos/cursos.module';
+import { CarregarMaisComponent } from './carregar-mais/carregar-mais.component';
 import { SlideComponent } from './slide/slide.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
@@ -11,6 +15,7 @@ import { HighlightMouseDirective } from '../shared/highlight-mouse.directive';
 import { HighlightDirective } from '../shared/highlight.directive';
 import { DiretivaNgElseComponent } from './diretiva-ng-else/diretiva-ng-else.component';
 import { NgElseDirective } from '../shared/ng-else.directive';
+import { CursoCriarComponent } from "../cursos/curso-criar/curso-criar.component";
 
 @NgModule({
   declarations: [
@@ -21,7 +26,13 @@ import { NgElseDirective } from '../shared/ng-else.directive';
     HighlightDirective,
     NgElseDirective,
   ],
-  imports: [CommonModule, SlideModule, CarregarMaisModule, FlipCardModule],
+  imports: [
+    CommonModule,
+    SlideModule,
+    CarregarMaisModule,
+    FlipCardModule,
+    CursosModule,
+  ],
   exports: [
     SlideComponent,
     FlipCardComponent,
@@ -31,6 +42,10 @@ import { NgElseDirective } from '../shared/ng-else.directive';
     HighlightMouseDirective,
     HighlightDirective,
     NgElseDirective,
+    CarregarMaisComponent,
+    CursoDetalheComponent,
+    CursosComponent,
+    CursoCriarComponent
   ],
 })
 export class SharedComponentsModule {}
