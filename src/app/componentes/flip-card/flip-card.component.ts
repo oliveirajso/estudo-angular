@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LogService } from 'src/app/shared/log.service';
 import { User } from 'src/app/type/userType';
 
 @Component({
@@ -7,7 +8,9 @@ import { User } from 'src/app/type/userType';
   styleUrls: ['./flip-card.component.css'],
 })
 export class FlipCardComponent implements OnInit {
-  constructor() {}
+  constructor(private logService: LogService) {
+    logService.consoleLog('Flip Card');
+  }
 
   ngOnInit(): void {}
   usuarios: User[] = [

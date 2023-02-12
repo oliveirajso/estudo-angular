@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CursoService } from './componentes/cursos/cursos.service';
-import { SharedComponentsModule } from './componentes/shared-components.module';
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
+import { SharedComponentsModule } from './shared/shared-components.module';
 
 @NgModule({
   declarations: [AppComponent],
