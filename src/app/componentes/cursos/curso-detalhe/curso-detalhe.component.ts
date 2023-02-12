@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CursoService } from './cursos.service';
+import { CursoService } from '../cursos.service';
 
 @Component({
-  selector: 'app-cursos',
-  templateUrl: './cursos.component.html',
-  styleUrls: ['./cursos.component.css'],
+  selector: 'app-curso-detalhe',
+  templateUrl: './curso-detalhe.component.html',
+  styleUrls: ['./curso-detalhe.component.css'],
 })
-export class CursosComponent implements OnInit {
+export class CursoDetalheComponent implements OnInit {
   cursos: string[] = [];
 
   constructor(private cursoService: CursoService) {}

@@ -5,9 +5,9 @@ import { FundoAmareloDirective } from '../shared/fundo-amarelo.directive';
 import { HighlightMouseDirective } from '../shared/highlight-mouse.directive';
 import { HighlightDirective } from '../shared/highlight.directive';
 import { NgElseDirective } from '../shared/ng-else.directive';
-import { CursosModule } from './../cursos/cursos.module';
 import { CarregarMaisComponent } from './carregar-mais/carregar-mais.component';
 import { CarregarMaisModule } from './carregar-mais/carregar-mais.module';
+import { CursosModule } from './cursos/cursos.module';
 import { DiretivaNgElseComponent } from './diretiva-ng-else/diretiva-ng-else.component';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { FlipCardComponent } from './flip-card/flip-card.component';
@@ -24,7 +24,13 @@ import { SlideModule } from './slide/slide.module';
     HighlightDirective,
     NgElseDirective,
   ],
-  imports: [CommonModule, SlideModule, CarregarMaisModule, FlipCardModule],
+  imports: [
+    CommonModule,
+    SlideModule,
+    CarregarMaisModule,
+    FlipCardModule,
+    CursosModule,
+  ],
   exports: [
     SlideComponent,
     FlipCardComponent,

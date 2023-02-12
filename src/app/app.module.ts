@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CursoService } from './componentes/cursos/cursos.service';
 import { SharedComponentsModule } from './componentes/shared-components.module';
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 
@@ -9,7 +10,7 @@ import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
   declarations: [AppComponent],
   imports: [BrowserModule, SharedComponentsModule],
   exports: [FundoAmareloDirective],
-  providers: [],
+  providers: [CursoService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
