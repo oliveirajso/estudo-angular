@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LogService } from 'src/app/shared/log.service';
-import { User } from 'src/app/type/userType';
+import { LogService } from 'src/app/shared/services/log.service';
+import { User } from 'src/app/shared/types/userType';
 
 @Component({
   selector: 'app-flip-card',

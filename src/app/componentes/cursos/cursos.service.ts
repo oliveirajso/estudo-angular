@@ -1,6 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 
-import { LogService } from './../../shared/log.service';
+import { LogService } from '../../shared/services/log.service';
 
 @Injectable({
   providedIn: 'root',

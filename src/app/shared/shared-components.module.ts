@@ -11,11 +11,12 @@ import { FlipCardComponent } from '../componentes/flip-card/flip-card.component'
 import { FlipCardModule } from '../componentes/flip-card/flip-card.module';
 import { SlideComponent } from '../componentes/slide/slide.component';
 import { SlideModule } from '../componentes/slide/slide.module';
-import { FundoAmareloDirective } from '../shared/fundo-amarelo.directive';
-import { HighlightMouseDirective } from '../shared/highlight-mouse.directive';
-import { HighlightDirective } from '../shared/highlight.directive';
-import { NgElseDirective } from '../shared/ng-else.directive';
-import { LogService } from './log.service';
+import { FundoAmareloDirective } from './diretivas/fundo-amarelo.directive';
+import { HighlightMouseDirective } from './diretivas/highlight-mouse.directive';
+import { HighlightDirective } from './diretivas/highlight.directive';
+import { NgElseDirective } from './diretivas/ng-else.directive';
+import { LogService } from './services/log.service';
+import { CamelCasePipe } from './pipes/camel-case.pipe';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { LogService } from './log.service';
     HighlightMouseDirective,
     HighlightDirective,
     NgElseDirective,
+    CamelCasePipe,
   ],
   imports: [
     CommonModule,
@@ -45,6 +47,6 @@ import { LogService } from './log.service';
     CarregarMaisComponent,
     CursosModule,
   ],
-  providers: [CursoService,LogService],
+  providers: [CursoService, LogService],
 })
 export class SharedComponentsModule {}

@@ -1,5 +1,5 @@
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
-import { Slid } from 'src/app/type/slidType';
+import { Component, OnInit } from '@angular/core';
+import { Slid } from 'src/app/shared/types/slidType';
 
 @Component({
   selector: 'app-slide',
