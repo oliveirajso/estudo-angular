@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { CarregarMaisComponent } from '../componentes/carregar-mais/carregar-mais.component';
 import { CarregarMaisModule } from '../componentes/carregar-mais/carregar-mais.module';
@@ -36,6 +37,7 @@ import { LogService } from './services/log.service';
     CursosModule,
     PipesModule,
     ExemploPipesModule,
+    FlexLayoutModule,
   ],
   exports: [
     SlideComponent,
