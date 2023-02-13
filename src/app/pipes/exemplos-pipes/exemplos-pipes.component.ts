@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { livroDTO } from 'src/app/shared/DTOs/LivroDTO';
 
-import { livroDTO } from './LivroDTO';
 
 @Component({
   selector: 'app-exemplos-pipes',
