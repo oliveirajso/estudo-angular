@@ -37,6 +37,13 @@
           }
         }
       }
+    },
+    {
+      "type": "npm",
+      "script": "db",
+      "problemMatcher": [],
+      "label": "npm: db",
+      "detail": "json-server --watch db.json"
     }
   ]
 }

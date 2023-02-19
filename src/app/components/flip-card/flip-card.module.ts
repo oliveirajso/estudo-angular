@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { FlipcardDirective } from 'src/app/components/flip-card/flipcard.directive';
+
 import { FlipCardComponent } from './flip-card.component';
-import { FlipcardDirective } from 'src/app/componentes/flip-card/flipcard.directive';
 
 @NgModule({
   declarations: [FlipCardComponent, FlipcardDirective],

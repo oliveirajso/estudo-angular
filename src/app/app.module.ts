@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { CursoService } from './componentes/cursos/cursos.service';
+import { CursoService } from './components/cursos/cursos.service';
 import { SettingsService } from './settings.service';
 import { FundoAmareloDirective } from './shared/diretivas/fundo-amarelo.directive';
 import { SharedModule } from './shared/shareModule.module';
@@ -25,6 +25,7 @@ registerLocaleData(ptBr);
         settingsService.getLocale(),
     },
     CursoService,
+    
   ],
   bootstrap: [AppComponent],
 })
