@@ -18,14 +18,7 @@ export class HeroesComponent implements OnInit {
   }
 
   getPersons(): void {
-    // this.personService.getPersons().subscribe(
-    //   (persons) => {
-    //     this.persons = persons;
-    //     console.log(persons);
-    //   },
-    //   (erro) => console.log(erro),
-    //   () => console.log('fim')
-    // );
+
     this.personService.getPersons().subscribe({
       next: (persons) => this.persons = persons,
       error: (erro) => console.log(erro),

@@ -14,6 +14,7 @@ import { FlipCardModule } from '../components/flip-card/flip-card.module';
 import { ObservableModule } from '../components/observable/observable.module';
 import { SlideComponent } from '../components/slide/slide.component';
 import { SlideModule } from '../components/slide/slide.module';
+
 import { ExemploPipesModule } from './../pipes/exemplos-pipes/exemplos-pipes.module';
 import { FundoAmareloDirective } from './diretivas/fundo-amarelo.directive';
 import { HighlightMouseDirective } from './diretivas/highlight-mouse.directive';

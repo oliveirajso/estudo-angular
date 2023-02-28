@@ -1,12 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filtroArray'
+  name: 'filtroArray',
 })
 export class FiltroArrayPipe implements PipeTransform {
-
-  transform(value: unknown, ...args: unknown[]): unknown {
+  transform(value: any, args?: any): any {
     return null;
   }
-
 }
